@@ -81,7 +81,7 @@ public class teste : MonoBehaviour
                 {
                     tableau[i, j] = 0;
                 }
-                else if (pourcendelien > 70)
+                else if (pourcendelien > 60)
                 {
                     if (tableau[i, j] == 0)
                     {
@@ -127,19 +127,9 @@ public class teste : MonoBehaviour
 
                 else if (tableauBloc[i].GetComponent<Renderer>().sharedMaterial == tableauBloc[j].GetComponent<Renderer>().sharedMaterial)
                 {
-                    /*a enlever ? */
-                    for (int k = 0; k < materials.Length; k++)
-                    {
-                        if (index == valueCouleur + 1)
-                        {
-                            index = 1;
-                            print(index);
-                        }
-                        tableauBloc[i].GetComponent<Renderer>().material = materials[index - 1];
-                    }
-                    /*tableau[i, j] = 0;
+                   tableau[i, j] = 0;
                     tableauCounterLien[i]--;
-                    tableauCounterLien[j]--;*/
+                    tableauCounterLien[j]--;
                 }
             }
         }
